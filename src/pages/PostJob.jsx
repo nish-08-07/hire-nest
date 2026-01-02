@@ -1,0 +1,5 @@
+// src/pages/PostJob.jsx
+function PostJob() {
+  return <h1>Post Job Page</h1>;
+}
+export default PostJob;
