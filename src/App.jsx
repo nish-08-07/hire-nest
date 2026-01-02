@@ -5,6 +5,8 @@ import './App.css'
 // import { BrowserRouter ,  Routes, Route } from "react-router-dom";
 // Pages import
 import { Routes, Route } from "react-router-dom";  
+import Navbar from "./components/Navbar";
+
 import Home from "./pages/Home";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
@@ -43,6 +45,8 @@ function App() {
   // )
   return (
        <div className= "App">
+            <Navbar />
+            <main className='main-content'>
             <Routes>
       
                  <Route path="/" element={<Home />} />
@@ -56,6 +60,7 @@ function App() {
                        {/* catch-all for 404 */}
                  <Route path="*" element={<NotFound />} />
              </Routes>
+             </main>
                
 
         </div>
